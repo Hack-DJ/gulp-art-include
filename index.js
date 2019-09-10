@@ -8,6 +8,8 @@ const through = require('through2')
 const balanced = require('balanced-match')
 const gutil = require('gulp-util')
 
+template.defaults.openTag='{#'
+template.defaults.closeTag='#}'
 var exports = function(options) {
 
   if (typeof options !== 'object')
